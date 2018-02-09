@@ -1,0 +1,11 @@
+function showText()
+{
+    if (document.getElementById('mechCheck').checked == true)
+    {
+	document.getElementById('mechCertHidden').style.display = 'block';
+    }
+    else
+    {
+	document.getElementById('mechCertHidden').style.display = 'none';
+    }
+};

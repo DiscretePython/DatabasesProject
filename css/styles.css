@@ -1,0 +1,88 @@
+.left-top {
+    text-align: left;
+}
+
+.Page {
+    text-align: center;
+    background: #d3d3d3; 
+}
+
+fieldset {
+    margin: auto;
+    border: 0px;
+    width: 120px;
+}
+
+.fieldset {
+    margin: auto;
+    border: 0px;
+    width: 250px;
+}
+
+.align-radio {
+    float: left;
+}
+
+table {
+    border: 1px solid black;
+    margin: auto;
+    width: 600px;
+}
+
+table td{
+    border: 1px solid black;
+}
+
+.details-text {
+    text-align: left;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.buttonWO {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+}
+
+.details {
+    margin: auto;
+    border: 0px;
+    width: 400px;
+}
+
+.buttonWO:hover {
+    background-color: black;
+    color: white;
+}
+
+#mechCertHidden {
+    display: none;
+    text-indent: 50px;
+}
+
+#salBoxHidden {
+    display: none;
+    text-indent: 50px;
+}
+
+#wageBoxHidden {
+    display: none;
+    text-indent: 50px;
+}

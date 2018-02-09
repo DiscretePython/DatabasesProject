@@ -1,0 +1,41 @@
+<html>
+    <head>
+    </head>
+    <body>
+	<?php
+	session_start();
+	
+	if ($_SESSION[admin_login] != TRUE)
+	{
+	    header("Location:index.php");
+	    exit;
+	}
+	
+	?>
+	<h2>Work Order Details:</h2><br />
+	<form action="addWarrantyWO.php" method="post">
+	    Warranty Account: <input type="text" name="Account"><br />
+	    <input type="submit" name="Submit" value="Submit">
+	</form>
+	
+	<?php
+	include('connect.php');
+	session_start();
+
+	if (isset($_POST['Submit']))
+	{
+	    $sql = "INSERT INTO WARRANTY VALUES ('$_SESSION[wONumber]',
+                   '$_POST[Account]')";
+
+	    if ($conn->query($sql) === TRUE)
+	    {
+		header("Location:adminHome.php");
+	    }
+	    else
+	    {
+		echo $conn->error;
+	    }
+	}
+	?>
+    </body>
+</html>
